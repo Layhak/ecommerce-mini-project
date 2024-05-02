@@ -71,7 +71,7 @@ export const NavigationBar = () => {
         {/*  </Button>*/}
         {/*</NavbarItem>*/}
         <NavbarItem className="hidden lg:flex">
-          <Dropdown placement="bottom-end">
+          <Dropdown placement="bottom-end" shadow={'md'}>
             <DropdownTrigger>
               <Avatar
                 isBordered
@@ -82,8 +82,12 @@ export const NavigationBar = () => {
                 src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
               />
             </DropdownTrigger>
-            <DropdownMenu aria-label="Profile Actions" variant="flat">
-              <DropdownItem key="profile" className="h-14 gap-2">
+            <DropdownMenu aria-label="Profile Actions" variant="shadow">
+              <DropdownItem
+                key="profile"
+                className="h-14 gap-2"
+                isDisabled={true}
+              >
                 <p className="font-semibold">Signed in as</p>
                 <p className="font-semibold">zoey@example.com</p>
               </DropdownItem>

@@ -2,10 +2,8 @@ import '@/styles/globals.css';
 import { Metadata, Viewport } from 'next';
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/config/fonts';
-import { Providers } from '../(auth)/providers';
-import { NavigationBar } from '@/components/navigationBar';
+import { Providers } from './providers';
 import clsx from 'clsx';
-import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: {
@@ -41,11 +39,9 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
           <div className="relative flex h-screen flex-col">
-            <NavigationBar />
             <main className="container mx-auto max-w-7xl flex-grow px-6 pt-16">
               {children}
             </main>
-            <Footer />
           </div>
         </Providers>
       </body>
