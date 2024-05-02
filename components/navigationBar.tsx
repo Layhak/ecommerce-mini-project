@@ -118,17 +118,17 @@ export const NavigationBar = () => {
             </NavbarItem>
           ))}
         </div>
-        <NavbarContent className="basis-1 pl-4 lg:hidden" justify="end">
-          <ThemeSwitch />
-          <Avatar
-            isBordered
-            color="secondary"
-            src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-            size={'sm'}
-          />
-          <NavbarMenuToggle />
-        </NavbarContent>
       </NavbarMenu>
+      <NavbarContent className="basis-1 pl-4 lg:hidden" justify="end">
+        <ThemeSwitch />
+        <Avatar
+          isBordered
+          color="secondary"
+          src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+          size={'sm'}
+        />
+        <NavbarMenuToggle />
+      </NavbarContent>
     </NextUINavbar>
   );
 };
